@@ -6,7 +6,15 @@ E.g reverseString('algorithms') // should return 'smhtirogla'
 
 
 function longestWord(text) {
-    // Code goes here
+    // Code goes herefunction reverseString(text) {
+    let result = ""
+
+    for( let char of text){
+        result=char+result
+    }
+
+    return result
+
 }
 
 
