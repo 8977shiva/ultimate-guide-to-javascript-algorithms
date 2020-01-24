@@ -7,14 +7,18 @@ E.g reverseString('algorithms') // should return 'smhtirogla'
 
 function longestWord(text) {
     // Code goes herefunction reverseString(text) {
-    let result = ""
-
-    for( let char of text){
-        result=char+result
-    }
-
-    return result
-
+        textArr=text.split(' ');
+        maxLength=0;
+        longWord=''
+       
+        for(let char of textArr){
+            if(char.length>maxLength){
+                maxLength=char.length;
+                longWord=char
+    
+            }
+        }
+     return longWord
 }
 
 
